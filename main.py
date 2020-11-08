@@ -7,7 +7,8 @@ lcd = CharLCD('PCF8574', 0x27)
 lcd.backlight_enabled = True
 
 def main():
-    lcd.write_string("EE0-50")
+    foo = input("Type today's code: ")
+    lcd.write_string(foo)
     time.sleep(999)
     
 while True:
